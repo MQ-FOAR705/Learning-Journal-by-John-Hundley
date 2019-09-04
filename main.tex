@@ -247,9 +247,38 @@ For the remaining three exercises I also did not know the correct answers. I am 
 
 \item Action: Entered 'cd north-pacific-gyre/2012-07-03'. Then *[AB].txt. It said the command was not valid. Then I looked at the solution on the exercise and tried the solutions provided. Entered 'ls *A.txt' and 'ls *B.txt'. It gave me the lists of the data according to the chosen letter. 
 
-\item Results: No major errors. Followed the instructions and it was all good. 
+\item Result: No major errors. Followed the instructions and it was all good. 
 
+\item \textbf {Intention: To show the output of data code loop: 'for datafile in *.pdb
+> do
+>    ls *.pdb
+> done' (3:26PM)}
 
+\item Action: Entered in the code. It produced the list of the outputs but sorted in matching columns of six. 
+
+\item Result: Produced the list. No errors.
+
+\item \textbf {Intention: To limit a set of files (3:31PM).}
+
+\item Action: Entered 'for filename in c*
+> do
+>    ls filename
+> done'
+
+\item Result: Produced the cubane.pdb file. No errors.
+
+\item \textbf{Intention: To learn how to save a file in a loop (3:34PM).}
+
+\item Action: (Note: Dollar signs have been deleted from transcript here to avoid issues in Overleaf.) Firstly, I entered 'for alkanes in *.pdb
+do
+    echo alkanes
+    cat alkanes > alkanes.pdb
+done'. Then, secondly, entered 'for datafile in *.pdb
+do
+    cat datafile >> all.pdb
+done'
+
+\item Result: On the first command it produced the list of molecules in a .pdb format? Not entirely sure. I think they are all saved in the alkanes file? With the second command it did not do anything. 
 
 
 \end{itemize}
