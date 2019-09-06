@@ -280,6 +280,39 @@ done'
 
 \item Result: On the first command it produced the list of molecules in a .pdb format? Not entirely sure. I think they are all saved in the alkanes file? With the second command it did not do anything. 
 
+\item \textbf{Intention: Testing commands via 'echo' prompt. (10:26AM)}
+
+\item Action: cd into data file. Then ran 
+ "for file in *.pdb
+> do
+>   echo "analyze file > analyzed-file"
+> done". Showed what it would have done if it had analysed the file. 
+
+\item Result: It ran the command correctly. No errors.
+
+\item \textbf{Intention: To create a new file within Git-Bash (10:40AM.}
+
+\item Action: Keyed in 'nano' into the molecules file. It brought me to a new window. Wrote the required text then saved it. Exited out and checked within the GUI if existed and it did.
+
+\item Result: Created a file in Git-Bash for the first time. No errors.
+
+\item \textbf{Intention: Replace 'octane.pdb' with the variable "$1$" (10:50AM):}
+
+\item Action: Entered in the command. It produced a list of atoms. It seems to have worked.
+
+\item Result: Entered a command into the nano text editor and check it within the main git-bash window and it worked. No problems. 
+
+\item \textbf{Intention: To use the 'grep' command (11:03AM).} 
+
+\item Action: Entered grep 'not' haiku.txt. It found the word 'not'. Did the same for the -w, -n, -i, and -v.
+
+\item Result: It found the commands I entered. Learnt how to use grep.
+
+\item \textbf {Intention: to use the 'find' command (11:19AM).}
+
+\item Action: Entered 'find .' in the writing folder file. It produced a list. Then added the command '- type d'. It narrowed the list down. Also tried it with '-type' and '-name'.
+
+\item Results: The find command found the required files according to the command. For example, when I entered in ' find. , name '*.txt'' it  found four files with txt in their name. In addition, finished the novice shell units. 
 
 \end{itemize}
 
