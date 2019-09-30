@@ -355,35 +355,51 @@ done'
 
 \begin{itemize} 
 
+
 \item \textbf{Intention: Trim leading and trailing white space (4:00PM).}
+
 
 \item Action: Edited the 'burntbricks' and 'mudduab' in the respondent-wall-type section. Deleted the white space in front of the word. 
 
+
 \item Result: It combined the two different categories into one. ' burntbricks' was edited to be 'burntbricks'. 
+
 
 \item \textbf{Intention: To filter the table so I can work on a subset of data instead of the whole thing (4:08PM).}
 
+
 \item Action: Hit 'text filter' on the 'respondent-roof-type' section. Then typed 'mabat' into the side bar. It narrowed the result to the 'mabatisloping' and 'mabatipitched'. Then I typed in 'mabatiptiched' and it only showed that term. 
+
 
 \item Result: What I typed into the text box showed in the corresponding column. 
 
+
 \item \textbf {Intention: To include/exclude data (4:20PM)}
+
 
 \item Action: Hit the 'text facet' on the 'respondent-roof-type' and played around with the include/exclude tools.
 
+
 \item Result: By selecting include on 'grass' it only included 'grass' on the columns on the right hand side.
+
 
 \item \textbf{Intention: To sort 'GPS altitude' data (4:25PM).}
 
+
 \item Action: Clicked the 'sort' option on the 'GPS altitude' column. Then sorted it by numbers.
+
 
 \item Result: The first ten results contained a zero. The data is probably missing given the rest of the altitude data is around the mid-high 600s. 
 
+
 \item \textbf{Intention: To sort multiple columns (4:34PM) }
+
 
 \item Action: Move the 'village' column to the end. Lined up the longitude and latitude columns with it. Then sorted the 'interview date' by date. It looked like 49 was Chirodzo. The GPS coordinates and dates lined up with each other. Then changed the name 49 into Chirodzo. 
 
+
 \item Result: Now there are only three villages, God, Ruaca, and Chirodzo. 
+
 
 \end{itemize}
 
@@ -394,7 +410,9 @@ done'
 
 \item \textbf{Intention: To transfer columns to numbers (2:46PM):}
 
+
 \item Action: Clicked 'Edit cells' on 'buildings-compound' column. Then went to common transforms and transform by number.
+
 
 \item Result: Changed the entries into numbers. The numbers were coloured green to prove this. 
 
@@ -448,9 +466,13 @@ done'
 
 \section{WEEK 8 (Proof of Concept Work):}
 
+
+30/09/19
+
+
 \begin{itemize}
   
-\item \textbf{Intention: To create a repository on Git-Hub for my PoC and start the work.}
+\item \textbf{Intention: To create a repository on Git-Hub for my PoC and start the work (1:30PM).}
     
     
 \item {Action: Created several issues on my repository. Realised they were very similar so collapsed them into one. The problem is: organisation of sources to upload into a corpus into Voyant.}
@@ -459,6 +481,122 @@ done'
 \item {Result: Have only one issue so far as outlined above. Will now find a shell script that can assist this.}
     
 \end{itemize}
+
+\section{WEEK 8 (RStudio):}
+
+
+30/09/19
+
+
+\item \textbf{Intention: to create a new project (4:20PM):}
+
+
+\item Action: Hit 'new project' on the menu and then selected 'new directory' and then 'new project'. Named it '705'. Created a new R script.
+
+\item Result: First project created. 
+
+\item \textbf{Intention: Create three new files (4:32PM). }
+
+
+\item Action: Hit'new folder' on the bottom right. Created the three folders data, data-output, and fig-output.
+
+
+\item Result: Three new folders in the bottom right console.
+
+
+\item \textbf{Intention: To test some math equations (4:45PM).}
+
+
+\item Action: Entered '1+5' and '12 / 7' along with some other equations. Also entered '(area-hectares <- 1.0). 
+
+
+\item Result: The code ran and answered the equations correctly. 
+
+
+\item \textbf{Intention: To add comments '#' (4:51PM).}
+
+
+\item Action: Entered '#' next to the hectares line of code. 
+
+
+\item Result: Did not effect the output of code.
+
+
+\item \textbf{Intention: Enter an equation with length and width (4:53PM).}
+
+
+\item Action: Entered the following - 'length into 2.5/ width into 3.2 / area into length of width / area'
+
+
+\item Result: Produced the result [1] 8... the answer in hectares. 
+
+\item \textbf{Intention: To use the 'round' command (5:14PM)}
+
+
+\item Action: Entered 'round(1.54321)'
+
+
+\item Result: Produced [1] 2
+
+
+\item \textbf{Intention: Create a vector (5:47PM).}
+
+
+\item Action: Filled in the numbers 3, 7, 10, 6 and hit 'c' for hh-members. Then typed 'hh-members'.
+
+
+\item Result: It returned [1] 3 7 10 6
+
+
+\item \textbf{Intention: Test the number returned on the 'length' of 'hh-members' (5:50PM)}
+
+
+\item Action: Typed in 'length (hh-members)
+
+
+\item Result: Produced [1] 4
+
+
+\item \textbf{Intention: To subset a vector (6:07PM).}
+
+
+\item Action: Entered "muddaub", "burntbricks", "sunbricks" into the respondent wall type with the "c" command. Then entered "respondent wall type" [2] under it.
+
+
+\item Result: Produced "burnbricks". 
+
+\item Errors: No actual errors but I am unaware of how and why this is the case. Why this is the result? I am unsure.  
+
+
+\item \textbf{Intention: To do conditional subsetting by using the logical vector (6:14PM).}
+
+
+\item Action: Entered TRUE, FALSE, TRUE, TRUE to the hh-members numbers. 
+
+
+\item Result: Returned with [1] 3 10 6. It eliminated the 7. 
+
+
+\item \textbf{Intention: To manage missing missing data (6:21PM).}
+
+
+\item Action: Entered 'mean(rooms, na.rm = TRUE)'. The 'na.rm' excludes the missing data from the equation.
+
+
+\item Result: Produced the result [1] 2 with no errors. 
+
+
+\item \textbf{Intention: }
+
+
+\item Action:
+
+
+\item Result:
+
+\end{itemize}
+
+
 
 
 
