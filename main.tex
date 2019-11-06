@@ -649,7 +649,78 @@ done'
 
 \item Result: Produced the data of the row in the right hand corner.
 
-FACTORS
+
+\item \textbf{Intention: To create factors with the SAFI data. (6/11 - 5:27PM)}
+
+
+\item Action: Entered "respondent-floor-type <- factor(c("earth", "cement", "cement", "earth"))". Then typed "levels(respondent-floor-type)" to test it.
+
+
+\item Result: Success. Produced "[1] "cement" "earth""
+
+
+\item \textbf{Intention: To test the order of the factors (5:31PM)}
+
+
+\item Action: Typed "respondent-floor-type # current order" 
+
+
+\item Result: Produced "Levels: cement earth." No errors. 
+
+
+\item \textbf{Intention: To convert factors (5:41PM):}
+
+
+\item Action: Typed - "as.character(respondent-floor-type)"
+
+
+\item Result: No errors. Produced "earth"  "cement" "cement" "earth" 
+
+
+\item \textbf{Intention: To test the conversion of factors using the ()levels approach (5:43PM)}
+
+
+\item Action: Typed "as.numeric(levels(year-fct))[year-fct]"
+
+
+\item Result: Error. It said the obect 'year-fct' not found. I know why... It is because I did not convert 'factor' to 'year-fct'.
+
+
+\item \textbf{Intention: Second test of the conversion of factors using the () levels approach (5:47PM):}
+
+
+\item Action: Entered "year-fct <- factor(c(1990, 1983, 1977, 1998, 1990))
+> as.numeric(year-fct)" And then, "as.numeric(as.character(year-fct))" And finally: "as.numeric(levels(year-fct))[year-fct]"
+
+
+\item Result: Success. Produced "1990 1983 1977 1998 1990".
+
+
+\item \textbf{Intention: To use use the plot() function to see at the number of observations at each factor level (5:51PM)}
+
+
+\item Action: Firstly, I created a vector from the "members associated" column. I typed "memb_assoc <- interviews (*Dollar-sign)memb-assoc". Then I converted it into a factor by entering "memb_assoc <- as.factor(memb-assoc)". Then finally, I entered: memb-assoc. 
+
+
+\item Result: It produced a large table/graph in the Console. 
+
+
+\item \textbf{Intention: To create a bar graph with the 'memb-assoc" information (5:56PM)}
+
+
+\item Action: Entered "plot(memb-assoc)"
+
+
+\item Result: It produced a bar graph in the right hand "plot" corner. 
+
+
+\item \textbf{Intention: To format/convert dates (5:57PM):}
+
+
+\item Action: Firstly, I loaded the package with "library(lubridate)". Then, to extract the "interview-date" column I entered "dates <- interviews(*Dollar-sign)interview-date" and 
+"str(dates)"
+
+\item Result: Produced "POSIXct[1:131], format: "2016-11-17" "2016-11-17" "2016-11-17" ..." 
 
 
 
