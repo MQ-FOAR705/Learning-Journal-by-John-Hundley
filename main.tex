@@ -723,12 +723,95 @@ done'
 \item Result: Produced "POSIXct[1:131], format: "2016-11-17" "2016-11-17" "2016-11-17" ..." 
 
 
+\item \textbf{Intention: To select columns of a data frame (6:14PM):}
 
+
+\item Action: Used "select()" with "interviews". Entered "select(interviews, village, no-membrs, years-liv)". This produced the large table. Then I use the "filter()" tool and entered "filter(interviews, village == "God")".
+
+
+\item Result: This produced the large table. Although, I'm unsure of what I am actually doing here and what this achieves. I can see that "God" is the only thing in the column but I don't know what else this is for...
+
+
+\item \textbf{Intention: To select a pipe and a filter at the same time (6:21PM):}
+
+
+\item Action: Entered "interviews-god <- select(filter(interviews, village == "God"), no-membrs, years-liv)"
+
+
+\item Result: Changed the interviews in the top right hand corner 'environment'. 
+
+
+\item \textbf{Intention: To complete the "pipes" exercise (6:32PM)}
+
+
+\item Action: Entered "interviews %>%
+    filter(memb-assoc == "yes") %>%
+    select(affect-conflicts, liv-count, no-meals)" as per the instructions. 
+    
+
+\item Result: Success. It produced the table with only the columns "affect-conflicts", "liv-count" and "no-meals".
+
+
+\item \textbf{Intention: To use the "mututate()" tool. Will test it with the number of people sleeping per room (6:39PM):}
+
+
+\item Action: Typed "interviews %>%
+    mutate(people-per-room = no-membrs / rooms)" as per the instructions. 
+    
+    
+\item Result: Produced the table that showed the number of members. 
+
+
+\item \textbf{Intention: To complete the "mutate" exercise which involves creating a new data frame that includes only the village column, and a new column called total-meals (6:45PM):}
+
+
+\item Action: Typed "interviews-total-meals <- interviews %>%
+    mutate(total-meals = no-membrs * no-meals) %>%
+    filter(total-meals > 20) %>%
+    select(village, total-meals)"
+    
+
+\item Result: No errors. Produced the table with the new "total-meals" column. 
+
+
+\item \textbf{Intention: To use the "summarize()" function. Will test it with the average number of members per household size per village (6:59PM):}
+
+
+\item Action: Entered "interviews %>% + group by(village) %>% + summarize(mean-no-membrs = mean(no-membrs)" 
+
+
+\item Result: It gave me a table with the average number of members per household size per village.
+
+
+\item \textbf{Intention: To use the "count()" tool (7:06PM):}
+
+
+\item Action: Entered "interviews %>% count(village)"
+
+
+\item Result: It produced the table with the number of interviews in the village. 
+
+
+\item \textbf{Intention: To complete the "count" exercises (8:21PM):}
+
+
+\item Action: To find the average of each meals per day I entered: "interviews %>%
+   count(no-meals)"
+    
+
+\item Result: It produced the following: 52 people had 2 meals per day and 79 people had 3 meals per day. 
+
+
+\item \textbf{Intention: to complete the "spread()" exercise. I will test it by creating a new data frame labelled "interviews-months-lack-food" which has a column for each month with T or F values for each respondent (8:25PM):}
+
+
+\item Action: Entered "interviews-months-lack-food <- interviews %>% separate-rows(months_lack_food, sep=";") %>% mutate(months-lack-food-logical  = TRUE) %>% spread(key = months-lack_food, value = months-lack_food-logical, fill = FALSE)
+
+
+\item Result: Produced a table which listen the total number of meals per village, per respondent. 
 
 
 \end{itemize}
-
-
 
 
 
