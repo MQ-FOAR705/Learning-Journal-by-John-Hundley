@@ -591,22 +591,22 @@ done'
 \item \textbf{Intention: To load the clean SAFI dataset into R (9:03PM).}
 
 
-\item Action: Entered 'install.packages("tidyverse")'. 
+\item Action: Entered install.packages("tidyverse"). 
 
 
-\item Result: Package loaded. I could see the attaching packages' headline and the 'conflicts' one too.
+\item Result: Package loaded. I could see the attaching packages' headline and the conflicts one too.
 
 
 \item \textbf{Intention: Test whether the data has been loaded correctly. (9:05PM)}
 
 
-\item Action: Entered 'interviews' into the Console.
+\item Action: Entered interviews into the Console.
 
 
 \result Result: Produced the table of the interviews.
 
 
-\item \textbf{Intention: To determine the class of 'interviews' (9:09PM).}
+\item \textbf{Intention: To determine the class of interviews (9:09PM).}
 
 
 \item Action: Entered -class (interviews) into the console. 
@@ -614,7 +614,7 @@ done'
 \item Result: It produced the following: [1] "spec-tbl-df" "tbl-df"      "tbl"         "data.frame" (NOTE: the underscores have been replaced with hyphens to prevent Overleaf problems).
 
 
-\item \textbf{Intention: to determine the size of the rows of 'interviews' (9:12PM)}
+\item \textbf{Intention: to determine the size of the rows of interviews (9:12PM)}
 
 
 \item Action: Entered 'nrow(interviews)'
@@ -623,10 +623,10 @@ done'
 \item Result: Produced the number 131
 
 
-\item \textbf{Intention: to determine the content of the last six rows of the 'interviews' (9:16PM)}
+\item \textbf{Intention: to determine the content of the last six rows of the interviews (9:16PM)}
 
 
-\item Action: Entered into the console 'tail(interviews)'
+\item Action: Entered into the console tail(interviews)
 
 
 \item Result: Produced the information for the last six interviews 
@@ -635,7 +635,7 @@ done'
 \item \textbf{Intention: to create a data frame that has the data in row 100 of the interviews dataset. (9:20PM)}
 
 
-\item Action: Entered 'interviews-100 <- interviews[100, ]' (NOTE: underscores have been replaced.)
+\item Action: Entered interviews-100 <- interviews[100, ] (NOTE: underscores have been replaced.)
 
 
 \item Result: Produced the frame in the right hand corner. 
@@ -644,7 +644,7 @@ done'
 \item \textbf{Intention: To extract the row in the middle of the data frame (9:36PM).}
 
 
-\item Action: Entered 'n-rows <- nrow(interviews)' and then 'interviews-last <- interviews[n-rows, ]'
+\item Action: Entered n-rows <- nrow(interviews)' and then 'interviews-last <- interviews[n-rows, ]
 
 
 \item Result: Produced the data of the row in the right hand corner.
@@ -653,34 +653,34 @@ done'
 \item \textbf{Intention: To create factors with the SAFI data. (6/11 - 5:27PM)}
 
 
-\item Action: Entered "respondent-floor-type <- factor(c("earth", "cement", "cement", "earth"))". Then typed "levels(respondent-floor-type)" to test it.
+\item Action: Entered respondent-floor-type <- factor(c(earth, cement, cement, earth)). Then typed levels(respondent-floor-type) to test it.
 
 
-\item Result: Success. Produced "[1] "cement" "earth""
+\item Result: Success. Produced [1] cement earth
 
 
 \item \textbf{Intention: To test the order of the factors (5:31PM)}
 
 
-\item Action: Typed "respondent-floor-type # current order" 
+\item Action: Typed "respondent-floor-type current order" 
 
 
-\item Result: Produced "Levels: cement earth." No errors. 
+\item Result: Produced: Levels: cement earth. No errors. 
 
 
 \item \textbf{Intention: To convert factors (5:41PM):}
 
 
-\item Action: Typed - "as.character(respondent-floor-type)"
+\item Action: Typed - as.character(respondent-floor-type)
 
 
-\item Result: No errors. Produced "earth"  "cement" "cement" "earth" 
+\item Result: No errors. Produced earth  cement cement earth 
 
 
 \item \textbf{Intention: To test the conversion of factors using the ()levels approach (5:43PM)}
 
 
-\item Action: Typed "as.numeric(levels(year-fct))[year-fct]"
+\item Action: Typed as.numeric(levels(year-fct))[year-fct]
 
 
 \item Result: Error. It said the obect 'year-fct' not found. I know why... It is because I did not convert 'factor' to 'year-fct'.
@@ -689,8 +689,7 @@ done'
 \item \textbf{Intention: Second test of the conversion of factors using the () levels approach (5:47PM):}
 
 
-\item Action: Entered "year-fct <- factor(c(1990, 1983, 1977, 1998, 1990))
-> as.numeric(year-fct)" And then, "as.numeric(as.character(year-fct))" And finally: "as.numeric(levels(year-fct))[year-fct]"
+\item Action: Entered "year-fct <- factor(c(1990, 1983, 1977, 1998, 1990)) as.numeric(year-fct)" And then, "as.numeric(as.character(year-fct))" And finally: "as.numeric(levels(year-fct))[year-fct]"
 
 
 \item Result: Success. Produced "1990 1983 1977 1998 1990".
@@ -699,63 +698,63 @@ done'
 \item \textbf{Intention: To use use the plot() function to see at the number of observations at each factor level (5:51PM)}
 
 
-\item Action: Firstly, I created a vector from the "members associated" column. I typed "memb_assoc <- interviews (*Dollar-sign)memb-assoc". Then I converted it into a factor by entering "memb_assoc <- as.factor(memb-assoc)". Then finally, I entered: memb-assoc. 
+\item Action: Firstly, I created a vector from the 'members associated' column. I typed: memb-assoc <- interviews (*Dollar-sign)memb-assoc". Then I converted it into a factor by entering "memb-assoc <- as.factor(memb-assoc). Then finally, I entered: memb-assoc. 
 
 
 \item Result: It produced a large table/graph in the Console. 
 
 
-\item \textbf{Intention: To create a bar graph with the 'memb-assoc" information (5:56PM)}
+\item \textbf{Intention: To create a bar graph with the memb-assoc information (5:56PM)}
 
 
-\item Action: Entered "plot(memb-assoc)"
+\item Action: Entered plot(memb-assoc)
 
 
-\item Result: It produced a bar graph in the right hand "plot" corner. 
+\item Result: It produced a bar graph in the right hand plot corner. 
 
 
 \item \textbf{Intention: To format/convert dates (5:57PM):}
 
 
-\item Action: Firstly, I loaded the package with "library(lubridate)". Then, to extract the "interview-date" column I entered "dates <- interviews(*Dollar-sign)interview-date" and 
-"str(dates)"
+\item Action: Firstly, I loaded the package with library(lubridate). Then, to extract the interview-date column I entered dates <- interviews(*Dollar-sign)interview-date and 
+str(dates)
 
-\item Result: Produced "POSIXct[1:131], format: "2016-11-17" "2016-11-17" "2016-11-17" ..." 
+\item Result: Produced: POSIXct[1:131], format: "2016-11-17" 2016-11-17" "2016-11-17" ... 
 
 
 \item \textbf{Intention: To select columns of a data frame (6:14PM):}
 
 
-\item Action: Used "select()" with "interviews". Entered "select(interviews, village, no-membrs, years-liv)". This produced the large table. Then I use the "filter()" tool and entered "filter(interviews, village == "God")".
+\item Action: Used select() with "interviews". Entered "select(interviews, village, no-membrs, years-liv)". This produced the large table. Then I use the "filter()" tool and entered "filter(interviews, village == "God")".
 
 
-\item Result: This produced the large table. Although, I'm unsure of what I am actually doing here and what this achieves. I can see that "God" is the only thing in the column but I don't know what else this is for...
+\item Result: This produced the large table. Although, I'm unsure of what I am actually doing here and what this achieves. I can see that God is the only thing in the column but I don't know what else this is for...
 
 
 \item \textbf{Intention: To select a pipe and a filter at the same time (6:21PM):}
 
 
-\item Action: Entered "interviews-god <- select(filter(interviews, village == "God"), no-membrs, years-liv)"
+\item Action: Entered interviews-god <- select(filter(interviews, village == "God"), no-membrs, years-liv)
 
 
 \item Result: Changed the interviews in the top right hand corner 'environment'. 
 
 
-\item \textbf{Intention: To complete the "pipes" exercise (6:32PM)}
+\item \textbf{Intention: To complete the pipes exercise (6:32PM)}
 
 
-\item Action: Entered "interviews %>%
-    filter(memb-assoc == "yes") %>%
+\item Action: Entered interviews
+    filter(memb-assoc == yes) 
     select(affect-conflicts, liv-count, no-meals)" as per the instructions. 
     
 
-\item Result: Success. It produced the table with only the columns "affect-conflicts", "liv-count" and "no-meals".
+\item Result: Success. It produced the table with only the columns affect-conflicts, liv-count and no-meals.
 
 
-\item \textbf{Intention: To use the "mututate()" tool. Will test it with the number of people sleeping per room (6:39PM):}
+\item \textbf{Intention: To use the mututate() tool. Will test it with the number of people sleeping per room (6:39PM):}
 
 
-\item Action: Typed "interviews %>%
+\item Action: Typed "interviews
     mutate(people-per-room = no-membrs / rooms)" as per the instructions. 
     
     
@@ -765,53 +764,99 @@ done'
 \item \textbf{Intention: To complete the "mutate" exercise which involves creating a new data frame that includes only the village column, and a new column called total-meals (6:45PM):}
 
 
-\item Action: Typed "interviews-total-meals <- interviews %>%
-    mutate(total-meals = no-membrs * no-meals) %>%
-    filter(total-meals > 20) %>%
+\item Action: Typed "interviews-total-meals <- interviews
+    mutate(total-meals = no-membrs * no-meals) 
+    filter(total-meals > 20)
     select(village, total-meals)"
     
 
-\item Result: No errors. Produced the table with the new "total-meals" column. 
+\item Result: No errors. Produced the table with the new 'total-meals' column. 
 
 
-\item \textbf{Intention: To use the "summarize()" function. Will test it with the average number of members per household size per village (6:59PM):}
+\item \textbf{Intention: To use the summarize() function. Will test it with the average number of members per household size per village (6:59PM):}
 
 
-\item Action: Entered "interviews %>% + group by(village) %>% + summarize(mean-no-membrs = mean(no-membrs)" 
+\item Action: Entered 'interviews + group by (village) + summarize(mean-no-membrs = mean(no-membrs)' 
 
 
 \item Result: It gave me a table with the average number of members per household size per village.
 
 
-\item \textbf{Intention: To use the "count()" tool (7:06PM):}
+\item \textbf{Intention: To use the 'count()' tool (7:06PM):}
 
 
-\item Action: Entered "interviews %>% count(village)"
+\item Action: Entered 'interviews // count(village)'
 
 
 \item Result: It produced the table with the number of interviews in the village. 
 
 
-\item \textbf{Intention: To complete the "count" exercises (8:21PM):}
+\item \textbf{Intention: To complete the 'count' exercises (8:21PM):}
 
 
-\item Action: To find the average of each meals per day I entered: "interviews %>%
-   count(no-meals)"
+\item Action: To find the average of each meals per day I entered: 'interviews // count(no-meals)'
     
 
 \item Result: It produced the following: 52 people had 2 meals per day and 79 people had 3 meals per day. 
 
 
-\item \textbf{Intention: to complete the "spread()" exercise. I will test it by creating a new data frame labelled "interviews-months-lack-food" which has a column for each month with T or F values for each respondent (8:25PM):}
+\item \textbf{Intention: to complete the spread() exercise. I will test it by creating a new data frame labelled "interviews-months-lack-food" which has a column for each month with T or F values for each respondent (8:25PM):}
 
 
-\item Action: Entered "interviews-months-lack-food <- interviews %>% separate-rows(months_lack_food, sep=";") %>% mutate(months-lack-food-logical  = TRUE) %>% spread(key = months-lack_food, value = months-lack_food-logical, fill = FALSE)
+\item Action: Entered 'interviews-months-lack-food <- interviews separate-rows(months-lack-food, sep=";") mutate(months-lack-food-logical  = TRUE) spread(key = months-lack-food, value = months-lack-food-logical, fill = FALSE)'
 
 
 \item Result: Produced a table which listen the total number of meals per village, per respondent. 
 
 
 \end{itemize}
+
+\section{PROOF OF CONCEPT WORK}
+
+
+\begin{itemize} 
+
+\item \textbf{Intention: Review User Stories (10:18AM):}
+
+\item Action: I have now added five more user stories in my repo in git-hub titled Collection and Organisation of Sources.
+
+\item Result: My project will now focus on the data life cycle in relation to Voyant. 
+
+
+\item \textbf{Intention: To discover three useful tools in Voyant (10:30AM):}
+
+
+\item Action: Uploaded ten sources relating to my thesis topic into Voyant. All files were from a zip archive on my computer. Sources related to Kantian and Nietzchean aesthetics. Before doing any analysis of tools, I, firstly, tried to embed the the current page and to use the contents of the current page as a corpus. However, my computer refused to upload the scripts. 
+
+
+\item Result: Error. Could not embed the corpus into my browser. 
+
+
+\item \textbf{Intention: Test three tools in Voyant (11:04AM):}
+
+
+\item Action: I will use the phrase: the sublime and the beautiful, to test out three tools. This phrase is important as it directly relates to my thesis. Firstly, I will explore the LINKS tool. Using the LINKS tool I can see other terms that the beautiful and the sublime link to in a compelling visual format. This is a good tool. Secondly, the TRENDS tool. This tool allows me to see where these terms are located across the ten documents in a distribution graph format. This is extremely relevant information for my research as I will be able to focus in on where the terms are most common. Thridly, the TERMSBERRY tool is also useful because it allows me to explore high frequency terms and their collocates with an eye catching visual representation. 
+
+
+\item Result: The LINKS, TRENDS, and TERMSBERRY tool will be my three main tools to demonstrate the data life cycle in relation to Voyant. 
+
+
+
+
+
+
+
+
+
+
+
+\end {itemize}
+
+
+
+
+
+
 
 
 
